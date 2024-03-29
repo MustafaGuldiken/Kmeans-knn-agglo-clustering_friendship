@@ -3,9 +3,9 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import AgglomerativeClustering
 
 # Verileri oku
-friends_data = pd.read_csv("D:/Ytü Dersler/Bilgiye Erişim ve Arama Motorları/Proje/archive/friends_table.csv")
-user_data = pd.read_csv("D:/Ytü Dersler/Bilgiye Erişim ve Arama Motorları/Proje/archive/userID_table.csv")
-reactions_data = pd.read_csv("D:/Ytü Dersler/Bilgiye Erişim ve Arama Motorları/Proje/archive/reactions_table_m.csv")
+friends_data = pd.read_csv("D:/Proje/archive/friends_table.csv")
+user_data = pd.read_csv("D:/Proje/archive/userID_table.csv")
+reactions_data = pd.read_csv("D:/Proje/archive/reactions_table_m.csv")
 
 # İki veri setini birleştir
 merged_data = pd.merge(friends_data, user_data, left_on='Friend 1', right_on='UserID', how='inner')
