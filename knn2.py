@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 
 # Datasetleri oku
-friends_df = pd.read_csv(r'D:\Ytü Dersler\Bilgiye Erişim ve Arama Motorları\Proje\archive\friends_table.csv')
-user_df = pd.read_csv(r'D:\Ytü Dersler\Bilgiye Erişim ve Arama Motorları\Proje\archive\userID_table.csv')
+friends_df = pd.read_csv(r'D:\Proje\archive\friends_table.csv')
+user_df = pd.read_csv(r'D:\Proje\archive\userID_table.csv')
 
 # Friend 1 ile UserID'yi birleştir
 merged_df = pd.merge(friends_df, user_df, left_on='Friend 1', right_on='UserID', how='inner')
